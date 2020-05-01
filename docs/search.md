@@ -2,6 +2,7 @@
 layout: default
 title: Search
 nav_order: 99
+nav_exclude: true
 ---
 
 # Search
