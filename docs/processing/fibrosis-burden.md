@@ -47,6 +47,27 @@ Since we want to know, usually, the area of the shell with a signal intensity gr
 
 Since the image intensity ratio process uses the blood pool mean as a reference, we also want to know the _actual_ thresholds used for calculating area; these are return as the second output argument of `imageIntensityRatioFibrosisBurden.m`
 
+The following code can be used to batch-process a folder of VTK and associated prodstats files.
+```matlab
+dir = <pathname>; % specify folder
+
+vtkFiles = nameFiles(dir, 'extension', 'vtk');
+txtFiles = nameFiles(dir, 'extension', 'txt');
+iir = 0.1:0.05:3.0;
+
+fibrosisBurden = NaN(numel(vtkFiles),numel(iir));
+
+h = waitbar(0,'Please wait ...');
+for i = 1:numel(vtkFiles)
+
+    [fB, ~] = imageIntensityRatioFibrosisBurden([dir filesep() vtkFiles{i}],[dir filesep() txtFiles{i}],iir);
+    
+    fibrosisBurden(i,:) = fB;
+    
+    waitbar(i/numel(vtkFiles),h);
+    
+end
+```
 
 
 
