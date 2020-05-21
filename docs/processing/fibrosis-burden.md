@@ -54,21 +54,15 @@ dir = <pathname>; % specify folder
 vtkFiles = nameFiles(dir, 'extension', 'vtk');
 txtFiles = nameFiles(dir, 'extension', 'txt');
 iir = 0.1:0.05:3.0;
-
 fibrosisBurden = NaN(numel(vtkFiles),numel(iir));
-
 h = waitbar(0,'Please wait ...');
 for i = 1:numel(vtkFiles)
-
     [fB, ~] = imageIntensityRatioFibrosisBurden([dir filesep() vtkFiles{i}],[dir filesep() txtFiles{i}],iir);
-    
     fibrosisBurden(i,:) = fB;
-    
     waitbar(i/numel(vtkFiles),h);
-    
 end
 ```
 
-
+A similar implementation is included in `run_imageIntensityRatioFibrosisBurdenExperiment.m` which also will output a graph.
 
 ## Publications using this code
