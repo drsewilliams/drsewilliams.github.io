@@ -2,7 +2,7 @@
 layout: default
 title: Mitral Annulus Electrograms
 parent: Processing
-nav_order: 6
+nav_order: 7
 ---
 
 # Measure Relative Amplitudes of Electrogams at the Mitral Annulus
