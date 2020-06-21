@@ -52,6 +52,13 @@ runMVAExperiment()
 userdata = importcarto_mem;
 ```
 
+### Create a left atrial shell from the rotational angiogram
+1. **Create a left atrial shell** from the rotational angiogram (and to store the file’s location in ```file3dra``` variable). This programme will ask you to select the mesh file (for example, ```LA.mesh```); and the Study XML file.
+```matlab
+% Create a left atrial shell
+CartoMeshToVTK_Mesh_translated;
+```
+
 ### Label the clockface positions of the points
 
 1. Run `part0ElectrodeNumbering(file3dra, userdata)`
@@ -60,18 +67,13 @@ userdata = importcarto_mem;
 4. Run `POINTPOSITIONS = get(hAx, 'userdata')` in the Command Window.
 
 ### Measure the annulus and electrograms
-1. **Create a left atrial shell** from the rotational angiogram (and to store the file’s location in ```file3dra``` variable). This programme will ask you to select the mesh file (for example, ```LA.mesh```); and the Study XML file.
-```matlab
-% Create a left atrial shell
-CartoMeshToVTK_Mesh_translated;
-```
-2. Identify the **mitral valve annulus plane** using ```partIDistances.m```. Select points around the mitral valve annulus using left click. Use the Matlab figure camera toolbar to rotate the shell. Once done, click 'q' on the keyboard.
+1. Identify the **mitral valve annulus plane** using ```partIDistances.m```. Select points around the mitral valve annulus using left click. Use the Matlab figure camera toolbar to rotate the shell. Once done, click 'q' on the keyboard.
 ```matlab
 % Identify the plane of the MV annulus
 partIDistances;
 ```
 ![](/assets/images/mitral-annulus-plane.png)
-3. **Measure the voltages of the ventricular and atrial electrograms.** Run ```partIIVoltages.m``` and use this programme to measure the voltages of the ventricular and atrial electrograms. This will store the voltages in a cell array called voltages, since the number of measured voltages will depend on the number of electrograms present. As detailed [here](/docs/processing/electrogram-amplitude/) use left click+drag and ctrl left click+drag for atrial and ventricular electrograms, respectively.
+2. **Measure the voltages of the ventricular and atrial electrograms.** Run ```partIIVoltages.m``` and use this programme to measure the voltages of the ventricular and atrial electrograms. This will store the voltages in a cell array called voltages, since the number of measured voltages will depend on the number of electrograms present. As detailed [here](/docs/processing/electrogram-amplitude/) use left click+drag and ctrl left click+drag for atrial and ventricular electrograms, respectively.
 ```matlab
 % Measure the electrogram voltages
 partIIvoltages;
