@@ -24,11 +24,16 @@ Processing for this protocol is done entirely in Matlab.
 ```matlab
 userdata = importcarto_mem;
 CartoMeshToVTK_Mesh_translated;
+part0ElectrodeNumbering(file3dra, userdata);
+POINTPOSITIONS = get(hAx, 'userdata');
 partIDistances;
 partIIvoltages;
 partIIIAnalysis;
 ```
-
+Alternatively, use the helper function
+```matlab
+runMVAExperiment()
+```
 ## Detailed Instructions
 
 ### Preparing and exporting Carto data
