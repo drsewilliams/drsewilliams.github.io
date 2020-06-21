@@ -34,6 +34,9 @@ Alternatively, use the helper function
 ```matlab
 runMVAExperiment()
 ```
+The helper function will automatically save the point locations, distances and voltages.
+Manually save the MV annulus plane figure and the graphs of voltages versus distance.
+
 ## Detailed Instructions
 
 ### Preparing and exporting Carto data
