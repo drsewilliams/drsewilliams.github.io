@@ -52,6 +52,13 @@ runMVAExperiment()
 userdata = importcarto_mem;
 ```
 
+### Label the clockface positions of the points
+
+1. Run `part0ElectrodeNumbering(file3dra, userdata)`
+2. Type the point indexes for the relevant electrograms into the boxes
+3. Click the button
+4. Run `POINTPOSITIONS = get(hAx, 'userdata')` in the Command Window.
+
 ### Measure the annulus and electrograms
 1. **Create a left atrial shell** from the rotational angiogram (and to store the file’s location in ```file3dra``` variable). This programme will ask you to select the mesh file (for example, ```LA.mesh```); and the Study XML file.
 ```matlab
