@@ -19,6 +19,9 @@ grand_parent: Data Sources
 # Background
 
 # Quickstart
+```matlab
+importcarto_mem
+```
 
 # Detailed instructions
 Carto exports password protected .zip files. Each password protected .zip file (for example, ```ExportData26_04_20 18_21_18.zip```) contains a further .zip file that contains the data (for example, ```Export_Study-1331-04_26_2020-17-59-21.zip```).
