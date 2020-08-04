@@ -2,7 +2,7 @@
 layout: default
 title: Fibrosis Burden
 parent: Processing
-nav_order: 6
+nav_order: 7
 ---
 
 # Calculate Fibrosis Burden

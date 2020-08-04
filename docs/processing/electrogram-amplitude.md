@@ -2,7 +2,7 @@
 layout: default
 title: Electrogram amplitude
 parent: Processing
-nav_order: 5
+nav_order: 6
 ---
 
 # Measure Electrogram Amplitudes
