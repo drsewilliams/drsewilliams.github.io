@@ -7,7 +7,7 @@ nav_exclude: false
 
 # Media
 
-* [Ventilators could be adapted to help two COVID-19 patients at once](https://www.imperial.ac.uk/news/202733/ventilators-could-adapted-help-covid19-patients/)
+* [Ventilators could be adapted to help two COVID-19 patients at once, 24th August 2020](https://www.imperial.ac.uk/news/202733/ventilators-could-adapted-help-covid19-patients/)
 
 * [Faculty researchers awarded prestigious Fellowships, 16th April 2020](https://www.kcl.ac.uk/news/faculty-researchers-awarded-prestigious-fellowships)
 
