@@ -7,6 +7,8 @@ nav_exclude: false
 
 # Media
 
+* [New open-source platform accelerates research into the treatment of heart arrhythmias](https://blog.frontiersin.org/2021/02/26/new-open-source-platform-accelerates-research-into-the-treatment-of-heart-arrhythmias/)
+
 * [Simulating Single-Ventilator, Dual-Patient Ventilation Strategies, December 2020](https://uk.mathworks.com/company/newsletters/articles/simulating-single-ventilator-dual-patient-ventilation-strategies.html)
 
 * [Ventilators could be adapted to help two COVID-19 patients at once, 24th August 2020](https://www.imperial.ac.uk/news/202733/ventilators-could-adapted-help-covid19-patients/)
